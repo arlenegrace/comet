@@ -1,0 +1,94 @@
+@media screen and (max-width: 1440px) {
+    body {
+        padding: 40px;
+    }
+
+    .aboutme {
+        padding-right: 40px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    body {
+        padding: 30px;
+    }
+    .aboutme nav ul li a {
+        font-size: 14px;
+        letter-spacing: 0.02em;
+    }
+    .aboutme .text_container h2 {
+        font-size: 18px;
+        letter-spacing: 0.02em;
+        margin-bottom: 10px;
+    }
+    .aboutme .text_container h1 {
+        font-size: 48px;
+        letter-spacing: 0.03em;
+    }
+    .aboutme .text_container p {
+        font-size: 20px;
+        letter-spacing: 0.02em;
+    }
+    .aboutme .text_container a {
+        font-size: 18px;
+        letter-spacing: 0.02em;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        padding: 25px;
+    }
+    .aboutme nav ul li {
+        margin-right: 50px;
+    }
+    .aboutme .text_container h2 {
+        font-size: 16px;
+        letter-spacing: 0.03em;
+        margin-bottom: 10px;
+    }
+    .aboutme .text_container h1 {
+        font-size: 42px;
+        letter-spacing: 0.04em;
+    }
+    .aboutme .text_container p {
+        font-size: 18px;
+        letter-spacing: 0.03em;
+        margin-bottom: 20px;
+    }
+    .aboutme .text_container a {
+        font-size: 18px;
+        letter-spacing: 0.03em;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    body {
+        padding: 0px;
+        flex-direction: column-reverse;
+    }
+    .aboutme,
+    .hero_image {
+        width: 100%;
+        height: auto;
+    }
+
+    .aboutme {
+        padding: 25px;
+        margin-bottom: auto;
+    }
+    .aboutme nav {
+        display: none;
+    }
+    .aboutme .text_container {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .aboutme {
+        padding: 15px;
+    }
+}

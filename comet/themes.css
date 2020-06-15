@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(41, 41, 41);
+}
+.aboutme nav ul li a {
+    color: rgb(112, 112, 112);
+}
+.aboutme nav ul li a:hover {
+    color: rgb(102, 102, 102);
+}
+
+.aboutme .text_container h2 {
+    color: rgb(133, 133, 133);
+}
+.aboutme .text_container h1 {
+    color: rgb(255, 255, 255);
+}
+.aboutme .text_container p {
+    color: rgb(168, 168, 168);
+}
+.aboutme .text_container a {
+    color: rgb(230, 230, 230);
+}
+.aboutme .text_container a:hover {
+    border-bottom: 2px solid rgba(230, 230, 230, 0.5);
+    padding-bottom: 3px;
+}
+
+/*
+ * TOO MUCH WHITE SPACE WITH LIGHT THEME,
+ * DARK BACKGROUND IS MORE FORGIVING. REMOVING
+ * LIGHT THEME SUPPORT FOR NOW.
+ */
+/* 
+@media screen and (prefers-color-scheme: light) {
+    .aboutme nav ul li a {
+        color: rgb(202, 202, 202);
+    }
+    .aboutme nav ul li a:hover {
+        color: rgb(102, 102, 102);
+    }
+    
+    .aboutme .text_container h2 {
+        color: rgb(175, 175, 175);
+    }
+    .aboutme .text_container h1 {
+        color: rgb(61, 61, 61);
+    }
+    .aboutme .text_container p {
+        color: rgb(143, 143, 143);
+    }
+    .aboutme .text_container a {
+        color: rgb(61, 61, 61);
+        transition-duration: 0.3s;
+    }
+    .aboutme .text_container a:hover {
+        color: rgba(61, 61, 61, 0.7);
+    }
+}
+ */
