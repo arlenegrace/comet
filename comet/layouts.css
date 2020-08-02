@@ -26,8 +26,7 @@
         letter-spacing: 0.03em;
     }
     .aboutme .text_container p {
-        font-size: 20px;
-        letter-spacing: 0.02em;
+        font-size: 18px;
     }
     .aboutme .text_container a {
         font-size: 18px;
@@ -48,12 +47,11 @@
         margin-bottom: 10px;
     }
     .aboutme .text_container h1 {
-        font-size: 42px;
+        font-size: 38px;
         letter-spacing: 0.04em;
     }
     .aboutme .text_container p {
-        font-size: 18px;
-        letter-spacing: 0.03em;
+        font-size: 17px;
         margin-bottom: 20px;
     }
     .aboutme .text_container a {
@@ -65,7 +63,7 @@
 @media only screen and (max-width: 750px) {
     body {
         padding: 0px;
-        flex-direction: column-reverse;
+        display: block;
     }
     .aboutme,
     .hero_image {

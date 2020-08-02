@@ -5,8 +5,8 @@ body {
     max-height: 100vh;
 
     display: flex;
+    flex-direction: row-reverse;
     padding: 50px;
-    overflow: hidden;
 }
 .aboutme {
     width: 50%;
@@ -53,9 +53,10 @@ body {
     margin-bottom: 20px;
 }
 .aboutme .text_container p {
-    font-weight: 400;
-    font-size: 22px;
+    font-weight: 300;
+    font-size: 19px;
     line-height: 1.5em;
+    letter-spacing: .06em;
     margin-bottom: 30px;
 }
 .aboutme .text_container a {

@@ -1,0 +1,172 @@
+/* 
+ * STRUCTURE:
+ * DESKTOP CSS
+ * LAYOUTS
+ * THEMES
+ */
+
+
+/* DESKTOP CSS */
+body {
+    font-family: 'Inter', sans-serif;
+    animation-timing-function: ease;
+}
+
+
+main {
+    transition: opacity 0.5s, filter 0.5s;
+}
+
+
+.sidenav {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.sidenav_container {
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+.sidenav_links {
+    position: relative;
+    top: 100px;
+    width: 100%;
+}
+.sidenav_links a {
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 0.03em;
+    text-align: right;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+
+    padding: 14px 32px;
+    display: block;
+    transition: 0.3s;
+}
+
+
+.nav_bar {
+    padding: 30px 30px;
+}
+.nav_bar_container {
+    margin: 0 auto;
+
+    width: auto;
+    max-width: 1200px;
+
+    display: flex;
+    align-items: center;
+}
+.nav_bar ul {
+    display: flex;
+}
+.right_header ul {
+    display: flex;
+}
+.right_header {
+    margin-left: auto;
+    margin-right: 0;
+}
+.right_header li {
+    margin-left: 50px;
+}
+.right_header a {
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+.center_header {
+    z-index: 1;
+    transition: all 0.5s;
+}
+.center_header .header_logo figure {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 54px;
+    height: 30px;
+    vertical-align: middle;
+
+    /* animation: fade_in 0.7s; */
+}
+.hamburger {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    margin: 15px;
+    display: none;
+    cursor: pointer;
+    z-index: 10;
+}
+/*ANIMATED HAMBURGER*/
+.bar1, .bar3 {
+    width: 25px;
+    height: 3px;
+    margin: 8px 0;
+    transition: 0.4s;
+
+    animation-name: blank_width 0.1s 0s, hamburger_in 0.5s 0.1s;
+    animation-fill-mode: forwards;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 4px);
+    transform: rotate(-45deg) translate(-5.5px, 4px);
+}
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-4px, -3px);
+    transform: rotate(45deg) translate(-3.5px, -2.5px);
+}
+
+
+/* LAYOUTS CSS */
+
+@media screen and (max-width: 750px) {
+    .hamburger {
+        display: block;
+    }
+}
+
+/* SHRINK DROPDOWN MENU TEXT FOR SHORT SCREENS (SUB 450PX HEIGHT) */
+@media screen and (max-height: 450px) {
+    .sidenav_container {
+        overflow-y: auto;
+    }
+    .sidenav_container a {
+        font-size: 20px
+    }
+}
+
+
+.sidenav_container {
+    background-color: rgb(36, 36, 36);
+}
+.sidenav_links a {
+    color: rgb(199, 199, 199);
+    color: rgb(219, 219, 219, 0.5);
+}
+.sidenav_links .current {
+    color: rgb(219, 219, 219);
+}
+.sidenav_links a:hover,
+.sidenav_container a:focus {
+    color: #ffeccf;
+    color: rgb(219, 219, 219);
+}
+.bar1,
+.bar2,
+.bar3 {
+    background-color: #f0d5b6;
+    background-color: rgb(204, 204, 204);
+    background-color: rgb(240, 240, 240);
+}
