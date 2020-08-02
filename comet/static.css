@@ -197,8 +197,15 @@ footer .github {
 
 /* COMPRESS FOOTER INTO VERTICAL STACK */
 @media screen and (max-width: 750px) {
-    .hamburger {
-        display: block;
+    footer {
+        display: none;
+    }
+    .youtube,
+    .instagram,
+    .twitter,
+    .discord,
+    .github {
+        margin-right: 30px;
     }
     footer {
         display: none;
