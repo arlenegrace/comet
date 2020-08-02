@@ -72,55 +72,10 @@ main {
 }
 
 
-.nav_bar {
-    padding: 30px 30px;
-}
-.nav_bar_container {
-    margin: 0 auto;
-
-    width: auto;
-    max-width: 1200px;
-
-    display: flex;
-    align-items: center;
-}
-.nav_bar ul {
-    display: flex;
-}
-.right_header ul {
-    display: flex;
-}
-.right_header {
-    margin-left: auto;
-    margin-right: 0;
-}
-.right_header li {
-    margin-left: 50px;
-}
-.right_header a {
-    font-weight: 600;
-    font-size: 16px;
-    letter-spacing: .1em;
-    text-decoration: none;
-    transition-duration: 0.3s;
-}
-.center_header {
-    z-index: 1;
-    transition: all 0.5s;
-}
-.center_header .header_logo figure {
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 54px;
-    height: 30px;
-    vertical-align: middle;
-
-    /* animation: fade_in 0.7s; */
-}
 .hamburger {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
 
     margin: 15px;
     display: none;
@@ -254,7 +209,5 @@ footer .github {
 .bar1,
 .bar2,
 .bar3 {
-    background-color: #f0d5b6;
-    background-color: rgb(204, 204, 204);
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(44, 44, 44);
 }
