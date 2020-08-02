@@ -29,15 +29,16 @@ main {
     transition: 0.5s;
 }
 .sidenav_container {
+    position: relative;
+    top: 100px;
     width: 100%;
     height: 100vh;
     overflow-y: hidden;
     transition: 0.5s;
 }
 .sidenav_links {
-    position: relative;
-    top: 100px;
     width: 100%;
+    margin-bottom: 40px;
 }
 .sidenav_links a {
     font-weight: 400;
@@ -51,6 +52,23 @@ main {
     padding: 14px 32px;
     display: block;
     transition: 0.3s;
+}
+.sidenav_container .social_container {
+    justify-content: center;
+}
+.sidenav_container .youtube,
+.sidenav_container .instagram,
+.sidenav_container .twitter,
+.sidenav_container .discord,
+.sidenav_container .github {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    transition: all 0.2s;
 }
 
 
@@ -128,12 +146,66 @@ main {
     transform: rotate(45deg) translate(-3.5px, -2.5px);
 }
 
+/* FOOTER */
+.social_container {
+    display: flex;
+}
+footer .youtube,
+footer .instagram,
+footer .twitter,
+footer .discord,
+footer .github {
+    margin-right: 20px;
+    width: 28px;
+    height: 28px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    transition: all 0.2s;
+}
+.youtube:hover,
+.instagram:hover,
+.twitter:hover,
+.discord:hover,
+.github:hover {
+    filter: brightness(0.8);
+}
+.youtube {
+    background-image: url("images/footer/youtube_dark.png");
+}
+.instagram {
+    background-image: url("images/footer/instagram_dark.png");
+}
+.twitter {
+    background-image: url("images/footer/twitter_dark.png");
+}
+.discord {
+    background-image: url("images/footer/discord_dark.png");
+}
+.github {
+    background-image: url("images/footer/github_dark.png");
+}
+
 
 /* LAYOUTS CSS */
 
+@media screen and (max-width: 800px) {
+    .sidenav_container button {
+        font-size: 20px
+    }
+}
+
+/* COMPRESS FOOTER INTO VERTICAL STACK */
 @media screen and (max-width: 750px) {
-    .hamburger {
-        display: block;
+    footer {
+        display: none;
+    }
+    .youtube,
+    .instagram,
+    .twitter,
+    .discord,
+    .github {
+        margin-right: 30px;
     }
 }
 
@@ -147,8 +219,21 @@ main {
     }
 }
 
+/* SHRINK FOOTER FOR SMALLER PHONES */
+@media screen and (max-width: 400px) {
+    .youtube,
+    .instagram,
+    .twitter,
+    .discord,
+    .github {
+        margin-right: 24px;
+    }
+}
 
-.sidenav_container {
+
+/* THEMES */
+
+.sidenav {
     background-color: rgb(36, 36, 36);
 }
 .sidenav_links a {
